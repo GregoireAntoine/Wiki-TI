@@ -24,7 +24,7 @@ Texte
 
 ## Bibliographie
 
-* [UNIX System V]([lien vers la ressource](https://fr.wikipedia.org/wiki/UNIX_System_V)),  http://fr.wikipedia.org/w/index.php?title=UNIX_System_V&action=history, 1 février 2021 à 15:40, consulté le 10/08/2022
+* [UNIX System V](https://fr.wikipedia.org/wiki/UNIX_System_V),  http://fr.wikipedia.org/w/index.php?title=UNIX_System_V&action=history, 1 février 2021 à 15:40, consulté le 10/08/2022
    - Résumé : ...
    - Avis sur la ressource : ... 
    
