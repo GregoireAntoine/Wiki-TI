@@ -10,7 +10,7 @@ De son nom complet UNIX System V, System V est une version du système d'exploit
 
 
 ###System D
-systemd est une suite logicielle qui fournit une gamme de composants système pour les systèmes d'exploitation Linux.
+systemd est une suite logicielle qui fournit une gamme de composants système pour les systèmes d'exploitation Linux. Systemd est le gestionnaire de système qui remplace upstart et son prédécesseur (les scripts system V) depuis Ubuntu 16.04 LTS Xenial. Le nom de ce programme vient de « system daemon » : le daemon du système. Il est le système d'init par défaut dans Debian depuis Debian 8 C'est une pièce maîtresse de l'architecture GNU/Linux. En effet, c'est le premier programme lancé par le noyau (il a donc le PID N°1) et il se charge de lancer tous les programmes suivants en ordre jusqu'à obtenir un système opérationnel pour l'utilisateur, selon le mode déterminé (single user, multi-user, graphique). C'est également à lui qu'incombe la tache de redémarrer ou arrêter votre ordinateur proprement.
 
 ## Qu'est-ce que font systemD et systemV ?
 
@@ -28,3 +28,6 @@ Texte
    - Avis sur la ressource : ... 
    
  * [systemd](https://fr.wikipedia.org/wiki/Systemd), http://fr.wikipedia.org/w/index.php?title=Systemd&action=history,3 août 2022,10/08/2022
+* [systemd](https://doc.ubuntu-fr.org/systemd) Zarmu,12/07/2022,10/08/2022
+* [systemD](https://wiki.debian.org/fr/systemd) unknown ,08/08/2022,10/08/2022
+* [](),,
