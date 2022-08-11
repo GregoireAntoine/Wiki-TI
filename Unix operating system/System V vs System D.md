@@ -2,7 +2,7 @@
 # systemD vs systemV
 ## Introduction 
  Les scripts dits « System V » sont ces scripts shell, situés sous /etc/init.d/ et dont l'appel avec les paramètres start ou stop produit les messages : Démarrage de .... [OK] ou Arrêt de ... [OK]. Ces scripts, ainsi que leur mécanique de lancement via /etc/rc, sont un héritage du vénérable Unix System V qui date de 1983. Cette architecture est simple, mais certains la trouvent lente, peu robuste et limitée, aussi depuis quelques années deux alternatives ont émergé au sein des principales distributions Linux. D'un côté, on trouve les partisans de Upstart (Ubuntu) et de l'autre les supporters de systemd (Fedora, Mandriva, OpenSuSE et bientôt RedHat et Debian). Nous allons dans ce wiki comparer la technologie de base présente dans le system V et celle qui vise à la remplacer, systemd. 
-![Image](https://github.com/GregoireAntoine/WikiTI/blob/main/Assets/Images/image%20service%20lancement%20systemd%20vs%20systemV.PNG)
+![Image](https://github.com/GregoireAntoine/Wiki-TI/blob/main/Assets/Images/image%20service%20lancement%20systemd%20vs%20systemV.PNG)
 ## Qu'est-ce que sont systemD et systemV ?
 
 ### Présentation system V
