@@ -9,7 +9,7 @@ De son nom complet UNIX System V, System V est une version du système d'exploit
 
 
 Voici un schéma permettant de visualiser schématiquement les différents OS Unix à travers le temps :
-![image](https://en.wikipedia.org/wiki/UNIX_System_V#/media/File:Unix_history-simple.svg)
+[SChéma](https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg)
 
 
 ### Présentation System D
