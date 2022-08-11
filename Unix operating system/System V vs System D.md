@@ -1,12 +1,13 @@
 [Accueil Wiki](https://epheclln.github.io/Wiki-TI/)
 # systemD vs systemV
-
+## Introduction 
+ Les scripts dits « System V » sont ces scripts shell, situés sous /etc/init.d/ et dont l'appel avec les paramètres start ou stop produit les messages : Démarrage de .... [OK] ou Arrêt de ... [OK]. Ces scripts, ainsi que leur mécanique de lancement via /etc/rc, sont un héritage du vénérable Unix System V qui date de 1983. Cette architecture est simple, mais certains la trouvent lente, peu robuste et limitée, aussi depuis quelques années deux alternatives ont émergé au sein des principales distributions Linux. D'un côté, on trouve les partisans de Upstart (Ubuntu) et de l'autre les supporters de systemd (Fedora, Mandriva, OpenSuSE et bientôt RedHat et Debian). Nous allons dans ce wiki comparer la technologie de base présente dans le system V et celle qui vise à la remplacer , systemd. 
+ 
 ## Qu'est-ce que sont systemD et systemV ?
 
 ### Présentation system V
 
 De son nom complet UNIX System V, System V est une version du système d'exploitation d'origine UNIX, dévoilée par l'entreprise AT&T en janvier 1983. UNIX étant une famille de systèmes d'exploitation multitâche et multi-utilisateur dérivé du Unix d'origine créé par AT&T. Beaucoup de système d'exploitation d'écoule directement de ce noyau c'est donc pourquoi il me semblait intéréssant de situer très rapidement ce qu'est UNIX. La première version de System V est sortie en 1983 et sa dernière mise à jour a eu lieu en 1997 avec la version release 5. System V est défini comme une version majeur de UNIX de part sa capacité de traitement rigoureux des accès aux données partagées.  
-
 
 Voici un schéma permettant de visualiser schématiquement les différents OS Unix à travers le temps :
 [SChéma](https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg)
@@ -18,6 +19,9 @@ systemd est une suite logicielle qui fournit une gamme de composants système po
 
 ## Différence entre Systemd et SystemV
 Mainentant que nous savons quels sont ces deux choses et ce qu'elles font nous allons regarder leur différences et leurs similitudes. 
+
+
+
 ## Pourquoi existe-t-il ces deux versions ?
 
 ## Comment ils font
