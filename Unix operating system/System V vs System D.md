@@ -2,7 +2,11 @@
 # systemD vs systemV
 ## Introduction 
  Les scripts dits « System V » sont ces scripts shell, situés sous /etc/init.d/ et dont l'appel avec les paramètres start ou stop produit les messages : Démarrage de .... [OK] ou Arrêt de ... [OK]. Ces scripts, ainsi que leur mécanique de lancement via /etc/rc, sont un héritage du vénérable Unix System V qui date de 1983. Cette architecture est simple, mais certains la trouvent lente, peu robuste et limitée, aussi depuis quelques années deux alternatives ont émergé au sein des principales distributions Linux. D'un côté, on trouve les partisans de Upstart (Ubuntu) et de l'autre les supporters de systemd (Fedora, Mandriva, OpenSuSE et bientôt RedHat et Debian). Nous allons dans ce wiki comparer la technologie de base présente dans le system V et celle qui vise à la remplacer, systemd. 
+ 
+ 
 ![Image](https://github.com/GregoireAntoine/Wiki-TI/blob/main/Assets/Images/image%20service%20lancement%20systemd%20vs%20systemV.PNG)
+
+
 ## Qu'est-ce que sont systemD et systemV ?
 
 ### Présentation system V
@@ -66,4 +70,5 @@ Cependant vous pouvez exécuter n'importe quelle script en n'importe quel langag
 * [systemd](https://doc.ubuntu-fr.org/systemd) Zarmu,12/07/2022,10/08/2022
 * [systemD](https://wiki.debian.org/fr/systemd) unknown ,08/08/2022,10/08/2022
 * [System V vs System D](https://www.quora.com/What-is-the-difference-between-SysVinit-and-systemd) unknown,2021, 10/08/2022
-* [The Biggest Myths] (http://0pointer.net/blog/projects/the-biggest-myths.html),Pid Eins,Unknown, 11/08/2022
+* [The Biggest Myths](http://0pointer.net/blog/projects/the-biggest-myths.html),Pid Eins,Unknown, 11/08/2022
+* [Systemd vainqueur de Upstart et des scripts « System V » ?](https://connect.ed-diamond.com/GNU-Linux-Magazine/glmf-153/systemd-vainqueur-de-upstart-et-des-scripts-system-v) ,Delamarche Jérôme,octobre 2012,11/08/2022
