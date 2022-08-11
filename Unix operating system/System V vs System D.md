@@ -57,8 +57,17 @@ Et bien c'est entièrement faux. Il ne sont just pas utiliser pendant la phase d
 Cependant vous pouvez exécuter n'importe quelle script en n'importe quel langage si vous le désirez.
 
 ### 3 Systemd est difficile 
+Beaucoup de personne pense que Systemd est difficile à utiliser alors qu'en fait il est plus simple que les outils traditionnel linux car il unifie les objects du systeme et leurs dépendances.
+
+Le langage du fichier de configuration est aussi très simple. 
+
+systemd s'accompagne d'une courbe d'apprentissage. Mais c'est comme ça partout et pour tout. Cependant, il semble qu'il serait en fait plus simple de comprendre systemd qu'un démarrage basé sur Shell pour la plupart des gens.
+
 
 ## Conclusion
+Pour conclure cet articles je dirais que systemd s'est "imposé", non pas partout, mais dans les distribs les plus populaires et les plus "grand public".
+
+Cependant beaucoup d'utilisateurs plus confirmer dans le domaine de la programmation en reviennent et sans aller jusqu'au fork, de nombreuses versions alternatives (et non dérivées) de ces grosses distributions qui permettent d'éviter systemd apparaissent ou se désolidarisent de la distribution principale si elles existaient déjà. 
 
 ## Bibliographie
 
@@ -72,3 +81,6 @@ Cependant vous pouvez exécuter n'importe quelle script en n'importe quel langag
 * [System V vs System D](https://www.quora.com/What-is-the-difference-between-SysVinit-and-systemd) unknown,2021, 10/08/2022
 * [The Biggest Myths](http://0pointer.net/blog/projects/the-biggest-myths.html),Pid Eins,Unknown, 11/08/2022
 * [Systemd vainqueur de Upstart et des scripts « System V » ?](https://connect.ed-diamond.com/GNU-Linux-Magazine/glmf-153/systemd-vainqueur-de-upstart-et-des-scripts-system-v) ,Delamarche Jérôme,octobre 2012,11/08/2022
+* [Systemd contre Sysvinit.](https://blog.desdelinux.net/fr/systemd-versus-sysvinit-systemd-shim/) Unknown, 12/07/2019,11/08/2022
+* [systemd] (https://wiki.archlinux.org/title/Systemd_(Fran%C3%A7ais)#:~:text=systemd%20est%20une%20suite%20de,d%C3%A9marre%20le%20reste%20du%20syst%C3%A8me.) Unknown,21 June 2022, 11/08/2022
+* 
