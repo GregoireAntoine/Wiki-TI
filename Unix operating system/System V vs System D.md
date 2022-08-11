@@ -2,7 +2,7 @@
 # systemD vs systemV
 ## Introduction 
  Les scripts dits « System V » sont ces scripts shell, situés sous /etc/init.d/ et dont l'appel avec les paramètres start ou stop produit les messages : Démarrage de .... [OK] ou Arrêt de ... [OK]. Ces scripts, ainsi que leur mécanique de lancement via /etc/rc, sont un héritage du vénérable Unix System V qui date de 1983. Cette architecture est simple, mais certains la trouvent lente, peu robuste et limitée, aussi depuis quelques années deux alternatives ont émergé au sein des principales distributions Linux. D'un côté, on trouve les partisans de Upstart (Ubuntu) et de l'autre les supporters de systemd (Fedora, Mandriva, OpenSuSE et bientôt RedHat et Debian). Nous allons dans ce wiki comparer la technologie de base présente dans le system V et celle qui vise à la remplacer, systemd. 
- 
+![Image](https://github.com/GregoireAntoine/WikiTI/blob/main/Assets/Images/image%20service%20lancement%20systemd%20vs%20systemV.PNG)
 ## Qu'est-ce que sont systemD et systemV ?
 
 ### Présentation system V
@@ -11,7 +11,6 @@ De son nom complet UNIX System V, System V est une version du système d'exploit
 
 Voici un schéma permettant de visualiser schématiquement les différents OS Unix à travers le temps :
 [SChéma](https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg)
-
 
 ### Présentation System D
 systemd est une suite logicielle qui fournit une gamme de composants système pour les systèmes d'exploitation Linux. Systemd est le gestionnaire de système qui remplace upstart et son prédécesseur (les scripts system V) depuis Ubuntu 16.04 LTS Xenial. Le nom de ce programme vient de « system daemon » : le daemon du système. Il est le système d'init par défaut dans Debian depuis Debian 8 C'est une pièce maîtresse de l'architecture GNU/Linux. En effet, c'est le premier programme lancé par le noyau (il a donc le PID N°1) et il se charge de lancer tous les programmes suivants en ordre jusqu'à obtenir un système opérationnel pour l'utilisateur, selon le mode déterminé (single user, multi-user, graphique). C'est également à lui qu'incombe la tache de redémarrer ou arrêter votre ordinateur proprement. On peut donc résumé que systemd est le mécanisme d’initialisation de nombreuses. Systemd est une suite de blocs basiques pour construire un système Linux. Il fournit un gestionnaire de services et du système qui s'exécute en tant que PID 1 et démarre le reste du système. Systemd fournit des capacités de parallélisation intensives, utilise l'activation par sockets et D-Bus pour démarrer les services, offre un démarrage à la demande des daemons, garde la trace des processus en utilisant les groupes de contrôle de Linux, gère les points de montage et d'automontage, et implémente une logique élaborée de contrôle des services basée sur les dépendances transactionnelles. Systemd prend en charge les scripts d'initialisation SysV et LSB et fonctionne comme un remplacement de sysvinit.
