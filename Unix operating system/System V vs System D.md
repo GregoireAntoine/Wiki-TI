@@ -23,6 +23,21 @@ Dans un souci de rationalisation et d'optimisation, systemd va réaliser des tâ
 Pour améliorer les performances du démarrage, systemd adopte plusieurs techniques astucieuses : tout d'abord, connaissant l'arbre de dépendances des services, il est naturellement capable de paralléliser les lancements de processus (on peut lancer A et B s'ils ne dépendent pas l'un de l'autre, même indirectement). Mais au-delà, systemd peut lancer en parallèle des processus interdépendants ! Comment cela ? Systemd va anticiper et créer une socket Unix pour tout service à démarrer. Ainsi, les « clients » d'un service (c'est à dire les services dépendants) vont se connecter dessus alors que le service réel n'est peut-être pas encore actif. Quand celui-ci le sera, systemd lui passera la socket, ainsi les « clients » bloqués pourront être servis !
 
 
+Commandes relatives aux services :
+Tâches / Système | SysVInit | Systemd	
+---- | ---- | -----------
+Démarrer un service  | service leservice start | systemctl start leservice.service 
+Stopper un service|service leservice stop|systemctl stop leservice.service
+Statut d'un service|service leservice status	|systemctl status leservice.service
+vérifier si un service est activé au boot|chkconfig leservice|systemctl is-enabled leservice.service
+
+Diverses commandes : 
+Tâches / Système | SysVInit | Systemd	
+---- | ---- | -----------
+Arrêter le système|halt|systemctl halt
+Eteindre le système|poweroff|systemctl poweroff
+Redémarrer le système|reboot|systemctl reboot
+Afficher les logs systèmes|tail -f /var/log/messages ou tail -f /var/log/syslog|journalctl -f
 
 ## Pourquoi existe-t-il ces deux versions ?
 
