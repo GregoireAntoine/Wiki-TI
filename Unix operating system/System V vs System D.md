@@ -1,7 +1,7 @@
 [Accueil Wiki](https://epheclln.github.io/Wiki-TI/)
 # systemD vs systemV
 ## Introduction 
- Les scripts dits « System V » sont ces scripts shell, situés sous /etc/init.d/ et dont l'appel avec les paramètres start ou stop produit les messages : Démarrage de .... [OK] ou Arrêt de ... [OK]. Ces scripts, ainsi que leur mécanique de lancement via /etc/rc, sont un héritage du vénérable Unix System V qui date de 1983. Cette architecture est simple, mais certains la trouvent lente, peu robuste et limitée, aussi depuis quelques années deux alternatives ont émergé au sein des principales distributions Linux. D'un côté, on trouve les partisans de Upstart (Ubuntu) et de l'autre les supporters de systemd (Fedora, Mandriva, OpenSuSE et bientôt RedHat et Debian). Nous allons dans ce wiki comparer la technologie de base présente dans le system V et celle qui vise à la remplacer , systemd. 
+ Les scripts dits « System V » sont ces scripts shell, situés sous /etc/init.d/ et dont l'appel avec les paramètres start ou stop produit les messages : Démarrage de .... [OK] ou Arrêt de ... [OK]. Ces scripts, ainsi que leur mécanique de lancement via /etc/rc, sont un héritage du vénérable Unix System V qui date de 1983. Cette architecture est simple, mais certains la trouvent lente, peu robuste et limitée, aussi depuis quelques années deux alternatives ont émergé au sein des principales distributions Linux. D'un côté, on trouve les partisans de Upstart (Ubuntu) et de l'autre les supporters de systemd (Fedora, Mandriva, OpenSuSE et bientôt RedHat et Debian). Nous allons dans ce wiki comparer la technologie de base présente dans le system V et celle qui vise à la remplacer, systemd. 
  
 ## Qu'est-ce que sont systemD et systemV ?
 
@@ -18,7 +18,9 @@ systemd est une suite logicielle qui fournit une gamme de composants système po
 
 
 ## Différence entre Systemd et SystemV
-Mainentant que nous savons quels sont ces deux choses et ce qu'elles font nous allons regarder leur différences et leurs similitudes. 
+Dans un souci de rationalisation et d'optimisation, systemd va réaliser des tâches qui étaient auparavant laissées au bon-vouloir du développeur des scripts System V. Par exemple, dorénavant, la gestion et le contrôle des PID des processus de service ainsi que ceux de leurs enfants sont à la charge de systemd. De même pour les logs. Systemd va aussi jouer le rôle de coordinateur et d'arbitre pour gérer dépendances et conflits.
+
+Pour améliorer les performances du démarrage, systemd adopte plusieurs techniques astucieuses : tout d'abord, connaissant l'arbre de dépendances des services, il est naturellement capable de paralléliser les lancements de processus (on peut lancer A et B s'ils ne dépendent pas l'un de l'autre, même indirectement). Mais au-delà, systemd peut lancer en parallèle des processus interdépendants ! Comment cela ? Systemd va anticiper et créer une socket Unix pour tout service à démarrer. Ainsi, les « clients » d'un service (c'est à dire les services dépendants) vont se connecter dessus alors que le service réel n'est peut-être pas encore actif. Quand celui-ci le sera, systemd lui passera la socket, ainsi les « clients » bloqués pourront être servis !
 
 
 
