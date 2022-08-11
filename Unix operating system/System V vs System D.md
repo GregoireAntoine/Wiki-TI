@@ -39,7 +39,20 @@ Redémarrer le système|reboot|systemctl reboot
 Afficher les logs systèmes|tail -f /var/log/messages ou tail -f /var/log/syslog|journalctl -f
 
 ## Discussion à propos de Systemd dans la communauté 
-Un partie de la communauté n'est pas fan du tout de systemd. En effet, 
+Un partie de la communauté n'est pas fan du tout de systemd. En effet, il est classé comme lourd, complexe et possessif sur les Distros où il est implémenté, bien qu'il ait rempli de manière satisfaisante les objectifs pour lesquels il a été créé. À tel point que la célèbre Distro DEBIAN, la mère de nombreux autres Distros GNU / Linux, l'implémente depuis un certain temps, ce qui a contribué à sa massification.
+
+## mythe à propos de systemd
+
+### 1 Systemd est rapide 
+
+Oui systemd D est considérer comme très rapide, un peu moisn de 1s pour le boot complet d'un espace utilisateur. Mais cette vitesse est due au fait que Systemd fait les choses correctement. En fait systemd est programmé sur le principe que j'appelle : la meilleure de code est celle qui n'existe pas. En effet, le code a été construit de façon à être le plus lisible possible. Et donc par conséquent, nous arrivons à un code avec peu de ligne, ou les chemins ne sont ni trop long ni inutiles et donc augmente ,sans le vouloir, la vitesse d'éxécution de ce code et donc la vitesse de boot d'un espace utilisateur
+
+### 2 Systemd n'est pas compatible avec les scripts shell
+Et bien c'est entièrement faux. Il ne sont just pas utiliser pendant la phase de démarrage car les conceveurs de systemd estime que ces scripts shells ne sont pas les meilleurs solutions pour cette tâche spécifique. 
+
+Cependant vous pouvez exécuter n'importe quelle script en n'importe quel langage si vous le désirez.
+
+### 3 Systemd est difficile 
 
 ## Conclusion
 
@@ -53,3 +66,4 @@ Un partie de la communauté n'est pas fan du tout de systemd. En effet,
 * [systemd](https://doc.ubuntu-fr.org/systemd) Zarmu,12/07/2022,10/08/2022
 * [systemD](https://wiki.debian.org/fr/systemd) unknown ,08/08/2022,10/08/2022
 * [System V vs System D](https://www.quora.com/What-is-the-difference-between-SysVinit-and-systemd) unknown,2021, 10/08/2022
+* [The Biggest Myths] (http://0pointer.net/blog/projects/the-biggest-myths.html),Pid Eins,Unknown, 11/08/2022
