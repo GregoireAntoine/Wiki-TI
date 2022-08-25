@@ -72,15 +72,31 @@ Cependant beaucoup d'utilisateurs plus confirmer dans le domaine de la programma
 ## Bibliographie
 
 * [UNIX System V](https://fr.wikipedia.org/wiki/UNIX_System_V),  http://fr.wikipedia.org/w/index.php?title=UNIX_System_V&action=history, 1 février 2021 à 15:40, consulté le 10/08/2022
-   - Résumé : ...
-   - Avis sur la ressource : ... 
+   - Résumé : explication complète de UNIX sytem V
+   - Avis sur la ressource : La ressource est complète mais parfois un peu trop technique
    
  * [systemd](https://fr.wikipedia.org/wiki/Systemd), http://fr.wikipedia.org/w/index.php?title=Systemd&action=history,3 août 2022,10/08/2022
+ * - Résumé : explication complète de UNIX sytem V
+   - Avis sur la ressource : La ressource est complète mais parfois un peu trop technique
 * [systemd](https://doc.ubuntu-fr.org/systemd) Zarmu,12/07/2022,10/08/2022
+* - Résumé : explication complète de UNIX sytem D
+   - Avis sur la ressource : La ressource est complète 
 * [systemD](https://wiki.debian.org/fr/systemd) unknown ,08/08/2022,10/08/2022
+* - Résumé : explication complète de UNIX sytem D 
+   - Avis sur la ressource : La ressource est accessible au gens ne s'y connaissant pas trop
 * [System V vs System D](https://www.quora.com/What-is-the-difference-between-SysVinit-and-systemd) unknown,2021, 10/08/2022
+* - Résumé : forum de discussion sur systemV et systemD
+   - Avis sur la ressource : Riche en argument valorisant les deux technologie
 * [The Biggest Myths](http://0pointer.net/blog/projects/the-biggest-myths.html),Pid Eins,Unknown, 11/08/2022
+* - Résumé : explication complète des myths de UNIX sytem V
+   - Avis sur la ressource : quelques points intéressents mais pas énormément 
 * [Systemd vainqueur de Upstart et des scripts « System V » ?](https://connect.ed-diamond.com/GNU-Linux-Magazine/glmf-153/systemd-vainqueur-de-upstart-et-des-scripts-system-v) ,Delamarche Jérôme,octobre 2012,11/08/2022
+* - Résumé : explication de pourquoi les gens préfère stystemD
+   - Avis sur la ressource : La ressource est complète mais parfois un peu trop technique
 * [Systemd contre Sysvinit.](https://blog.desdelinux.net/fr/systemd-versus-sysvinit-systemd-shim/) Unknown, 12/07/2019,11/08/2022
+* - Résumé : comparaison entre systemD et systemV
+   - Avis sur la ressource : La ressource est très agréable et informative
 * [systemd] (https://wiki.archlinux.org/title/Systemd_(Fran%C3%A7ais)#:~:text=systemd%20est%20une%20suite%20de,d%C3%A9marre%20le%20reste%20du%20syst%C3%A8me.) Unknown,21 June 2022, 11/08/2022
+* - Résumé : explication complète de UNIX sytem V
+   - Avis sur la ressource : La ressource est complète mais parfois un peu trop technique
 * 
